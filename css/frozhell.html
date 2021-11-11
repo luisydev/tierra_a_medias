@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel='stylesheet' type='text/css' href='/css/themes/bootstrap/jquery-ui-1.8.16.custom.css?1628285177' />
+		<link rel='stylesheet' type='text/css' href='/assets/base.css?1628285179' />
+		<!-- <link rel='stylesheet' type='text/css' href='/assets/app.css?1629471947' /> -->
+		<link rel='stylesheet' type='text/css' href='/css/charsheet.css?1628285177' />
+
+		<link href='https://fonts.googleapis.com/css?family=Patrick+Hand|Contrail+One|Shadows+Into+Light|Candal&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+		<script type="text/javascript">
+			const d20 = {
+				characterId: "-M3Ss5n_Q_UTuNed42q3",
+			};
+			window.d20 = d20;
+		</script>
+		<script type="text/javascript" src="/v2/js/jquery-1.9.1.js?1628285179""></script>
+		<script type="text/javascript" src="/js/jquery-ui.1.9.0.custom.min.js?1628285178"></script>
+		<script type="text/javascript" src="/js/jquery.ui.touch.js?1628285178"></script>
+		<script type="text/javascript" src="/v2/js/patience.js?1628285179"></script>
+
+		<script type="text/javascript" src="/js/d20/charsheetjs/view/attribute_tab.js?1628285178"></script>
+		<script type="text/javascript" src="/js/d20/charsheetjs/view/draggables.js?1628285178"></script>
+
+		
+		<style id="patience__styles" type="text/css" media="screen">.patinece__parent{position:relative;}@-webkit-keyframes spinner{0%{-webkit-transform:rotate(0deg);}25%{-webkit-transform:rotate(90deg);}50%{-webkit-transform:rotate(180deg);}75%{-webkit-transform:rotate(270deg);}100%{-webkit-transform:rotate(360deg);}}@keyframes spinner{0%{-ms-transform:rotate(0deg);transform:rotate(0deg);}25%{-ms-transform:rotate(90deg);transform:rotate(90deg);}50%{-ms-transform:rotate(180deg);transform:rotate(180deg);}75%{-ms-transform:rotate(270deg);transform:rotate(270deg);}100%{-ms-transform:rotate(360deg);transform:rotate(360deg);}}.loader{z-index:2147483647;position:absolute;top:0;bottom:0;left:0;right:0;min-width:100%;min-height:100%;background:rgba(100%,100%,100%,.95);margin-top:0;margin-left:auto;margin-right:auto;margin-bottom:0;padding:1rem;display:block;}.loader svg path,.loader svg rect{fill:#70288b;animation-duration:.7s;animation-iteration-count:infinite;animation-name:spinner;animation-timing-function:linear;-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;}</style>
+	</head>
+	<body>
+		<div id="dialog-window" class="ui-dialog patinece__parent" aria-live="polite" aria-relevant="all">
+			<div class="loader" title="loading" aria-controls="dialog-window">
+				<svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve" aria-labelledby="patientSVGTitle patientSVGDesc">
+					<title id="patientSVGTitle">Loading indicator</title>
+					<desc id="patientSVGDesc">Please wait while the character sheet is being loaded</desc>
+					<g id="patientSVGspinner">
+						<path fill="#70288b" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"></path>
+					</g>
+				</svg>
+			</div>
+			<div class="dialog largedialog characterviewer" style="display: block;">
+				
+					<button id="edit-button" class="btn">Editar</button>
+				
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="javascript:void(0);" data-tab="bioinfo"> Bio & Info</a>
+					</li>
+					
+						
+							<li>
+								<a href="javascript:void(0);" data-tab="charsheet">Character Sheet</a>
+							</li>
+							<li style="display: none;">
+								<a href="javascript:void(0);" data-tab="charmancer">Charactermancer</a>
+							</li>
+						
+						<li>
+							<a href="javascript:void(0);" data-tab="attributesabilities">Attributes & Abilities</a>
+						</li>
+					
+				</ul>
+				<div id="tab-content" class="tab-content">
+					<div class="bioinfo tab-pane">
+						<div class="row-fluid">
+							<div class="span12">
+								<div id='bio-avatar' class='avatar draggableresult' data-represents='-M3Ss5n_Q_UTuNed42q3' data-fullsizeurl=''></div>
+								<div class="content note-editor summernote bio" style="display: inline !important;"></div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+					</div>
+					
+						<div class="attributesabilities tab-pane">
+							<div class="row-fluid">
+								<div class="span6">
+									<button class="btn addattrib">+ Add</button>
+									<h3>Attributes</h3>
+									<div class="clear"></div>
+									<div class="attributes">
+										<div class="header">
+											<div class="heading">Name</div>
+											<div class="heading">Current</div>
+											<div class="heading" style="padding-left: 15px;">
+												Max <small>Optional</small>
+											</div>
+											<div class="clear"></div>
+										</div>
+										<div class="body"></div>
+										<div class="clear"></div>
+									</div>
+								</div>
+								<div class="span6">
+									<button class="btn addabil">+ Add</button>
+									<h3>Abilities</h3>
+									<div class="clear"></div>
+									<div class='abilities' data-characterid="-M3Ss5n_Q_UTuNed42q3">
+									<div class="body"></div>
+									<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
+						
+							<form class="sheetform" autocomplete="off">
+								<div class="charactersheet tab-pane charsheet"></div>
+								<div class="charmancer tab-pane charsheet"></div>
+							</form>
+						
+					
+				</div>
+			</div>
+		</div>
+		<div id="background"></div>
+		<div id="macrobar" style="z-index: -10;">
+			<p>Add roll to macro quick bar.</p>
+			<div id="macrobar_macros" class="ui-sortable"></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.addEventListener('submit', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+		});
+
+		window.addEventListener('keydown', function(e) {
+			if(e.which === 13 && e.target.tagName.toLowerCase() === 'input') {
+				e.stopPropagation();
+				e.preventDefault();
+			}
+		});
+	</script>
+</html>

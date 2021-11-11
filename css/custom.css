@@ -1,0 +1,41 @@
+/*! Place your custom styles here */
+.img-tAm{
+    background-image: url(../img/img_tAm/middle_earth_map.jpg);
+    background-size: cover;
+}
+.middle-font{
+    font-family: 'Caveat', cursive;
+    font-family: 'MedievalSharp', cursive;
+    background-color: rgba(203, 134, 101, 0.37);
+    font-size: 8rem;   
+}
+
+.trilogia{
+    background-color: rgba(203, 134, 101, 0.37);
+}
+.trilogia:hover{
+    color: rgb(203, 116, 101) ;
+}
+
+.link-font{
+    color: rgba(203, 134, 101, 1) ;
+}
+.link-font:hover{
+    color: rgb(203, 116, 101) ;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.shadow{
+    text-shadow: 1px 1px white;
+}
+
+.font-top{
+    color: rgba(203, 134, 101, 0.37);
+}
+.letraClub{
+    font-size: 5rem;
+}
+.btn-tAm{
+    background-color :rgba(203, 134, 101, 1);
+    color:rgba(0, 0, 0, 0.5);
+}
